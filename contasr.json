@@ -1,1 +1,1 @@
-{"contasR":[{"id":8,"vencimento":"20\/12\/2016","nome":"Sal\u00e1rio","valor":7265.47,"pago":0},{"id":9,"vencimento":"21\/12\/2016","nome":"wololo","valor":800,"pago":1},{"id":10,"vencimento":"22\/12\/2016","nome":"Venda","valor":174.87,"pago":0}]}
+{"contasR":[{"id":8,"vencimento":"20\/12\/2016","nome":"Sal\u00e1rio","valor":7265.47,"pago":true},{"id":9,"vencimento":"21\/12\/2016","nome":"wololo","valor":800,"pago":false},{"id":10,"vencimento":"22\/12\/2016","nome":"Venda","valor":174.87,"pago":false}]}
