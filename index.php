@@ -80,11 +80,15 @@ $app->get('api/contas/total', function () use ($app) {
     $contasR = getContasR();
     $sum=0;
     foreach ($contasR as $value) {
-        $sum += (float)$value['valor'];
+        if (!$value['pago']) {
+            $sum += (float)$value['valor'];
+        }
     }
     $contasP = getContasP();
     foreach ($contasP as $value) {
-        $sum -= (float)$value['valor'];
+        if (!$value['pago']) {
+            $sum -= (float)$value['valor'];
+        }
     }
     return $app->json(['total' => $sum]);
 });
